@@ -33,13 +33,13 @@ From the repository root:
 
 ```bash
 cd app
-docker build -t your-docker-registry/app-service:latest .
+docker build -t nikitathakre10/app-service:latest .
 ```
 
-Then push to your registry:
+Then push to Docker Hub:
 
 ```bash
-docker push your-docker-registry/app-service:latest
+docker push nikitathakre10/app-service:latest
 ```
 
 ## Run locally
@@ -107,6 +107,6 @@ http://localhost:8080/
 ## Notes
 
 - Update `k8s/ingress.yaml` with your real domain.
-- Update the image name in `k8s/app.yaml` to your container registry.
+- The app image is `nikitathakre10/app-service:latest` in `k8s/app.yaml`.
 - Keep only this README in the repository for documentation.
 - Remove any local secret files from the repo before committing.

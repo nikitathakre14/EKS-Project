@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: app
-        image: your-docker-registry/app-service:latest
+        image: nikitathakre10/app-service:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 80
