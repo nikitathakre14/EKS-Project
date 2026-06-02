@@ -1,4 +1,4 @@
-resource "aws_route53_record" "failover" {
+resource "aws_route53_record" "failover_dr" {
   zone_id = "Z123"
   name    = "app.example.com"
   type    = "A"
