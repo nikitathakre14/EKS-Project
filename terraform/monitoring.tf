@@ -8,7 +8,7 @@ resource "aws_cloudwatch_log_group" "eks_cluster" {
   }
 }
 
-resource "aws_route53_record" "failover" {
+resource "aws_route53_record" "failover_monitor" {
   zone_id = "Z123"
   name    = "app.example.com"
   type    = "A"
